@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { Header, Main, Footer } from "../components";
+
 export default function Home() {
   return (
     <>
@@ -9,6 +11,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Header />
+
+      <Main textContent='This is home page and default page' />
+
+      <Footer />
     </>
   )
 }
