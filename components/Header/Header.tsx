@@ -30,7 +30,7 @@ export default function Header() {
 		<>
 			<header className={`w-full h-[${headerHeight}vh] bg-slate-200`}>
 				<Container>
-					<div className="absolute top-3 left-3">
+					<div className="absolute top-3 left-5">
 						<Image src={LogoImage} alt="Logo" />
 					</div>
 
