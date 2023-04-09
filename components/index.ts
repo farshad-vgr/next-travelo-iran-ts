@@ -9,5 +9,7 @@ you can easily import it using the named import in a single line from "./compone
 export { default as Container } from "./Container/Container";
 export { default as Header } from "./Header/Header";
 export { default as Navbar } from "./Navbar/Navbar";
+export { default as SearchButton } from "./SearchButton/SearchButton";
+export { default as MenuButton } from "./MenuButton/MenuButton";
 export { default as Main } from "./Main/Main";
 export { default as Footer } from "./Footer/Footer";
