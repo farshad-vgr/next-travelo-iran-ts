@@ -4,7 +4,7 @@ interface Props {
 	textContent: string;
 }
 
-export default function Main({ textContent }: Props) {
+export default function HomeMain({ textContent }: Props) {
 	return (
 		<>
 			<main className="w-full min-h-[60vh] bg-blue-400">
