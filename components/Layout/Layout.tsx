@@ -6,10 +6,10 @@ interface Props {
 
 export default function Layout({ children }: Props) {
 	return (
-		<>
+		<section className="relative">
 			<Header />
 			{children}
 			<Footer />
-		</>
+		</section>
 	);
 }

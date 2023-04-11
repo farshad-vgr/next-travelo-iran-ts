@@ -4,7 +4,7 @@ export default function Navbar() {
 	return (
 		<>
 			<nav>
-				<ul id="menu" className="flex gap-16 text-xl">
+				<ul id="menu" className="flex gap-10 md:gap-16 text-xl">
 					<li className="hover:text-blue-400 hover:underline">
 						<Link href="/">
 							<span className="flex gap-1">
@@ -25,6 +25,7 @@ export default function Navbar() {
 							</span>
 						</Link>
 					</li>
+
 					<li className="hover:text-blue-400 hover:underline">
 						<Link href="/locations">
 							<span className="flex gap-1">
@@ -46,6 +47,7 @@ export default function Navbar() {
 							</span>
 						</Link>
 					</li>
+
 					<li className="hover:text-blue-400 hover:underline">
 						<Link href="/about">
 							<span className="flex gap-1">
@@ -66,6 +68,7 @@ export default function Navbar() {
 							</span>
 						</Link>
 					</li>
+					
 					<li className="hover:text-blue-400 hover:underline">
 						<Link href="/contact">
 							<span className="flex gap-1">

@@ -12,6 +12,8 @@ export { default as Header } from "./Header/Header";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as SearchButton } from "./SearchButton/SearchButton";
 export { default as MenuButton } from "./MenuButton/MenuButton";
+export { default as CloseButton } from "./CloseButton/CloseButton";
+export { default as Asidebar } from "./Asidebar/Asidebar";
 export { default as HomeMain } from "./Mains/HomeMain";
 export { default as LocationsMain } from "./Mains/LocationsMain";
 export { default as AboutMain } from "./Mains/AboutMain";
