@@ -1,19 +1,17 @@
 import Head from "next/head";
 
-import { Header, Main, Footer } from "../components";
+import { AboutMain, Layout } from "../components";
 
 export default function About() {
 	return (
 		<>
 			<Head>
-				<title>About Page</title>
+				<title>About</title>
 			</Head>
 
-			<Header />
-
-			<Main textContent="About page is here!" />
-
-			<Footer />
+			<Layout>
+				<AboutMain textContent="The About page is here!" />
+			</Layout>
 		</>
 	);
 }
