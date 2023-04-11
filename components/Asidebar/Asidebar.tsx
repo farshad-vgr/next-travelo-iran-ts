@@ -15,7 +15,7 @@ export default function Asidebar({ isAside, setIsAside }: Props) {
 				<CloseButton setIsAside={setIsAside} />
 
 				<section className="mt-12 p-4">
-					<Navbar direction="flex-col" textColor="text-white" />
+					<Navbar direction="flex-col" />
 				</section>
 			</aside>
 		</>

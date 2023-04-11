@@ -24,15 +24,17 @@ export default function Header() {
 	return (
 		<>
 			<header className={`w-full h-[15vh] sm:h-[20vh] bg-headerBackground bg-cover bg-[center_right_35%] bg-no-repeat bg-opacity-20`}>
-				<Container>
-					<div className="absolute top-3 left-5">
-						<Image src={LogoImage} alt="Logo" />
-					</div>
+				<div className="w-full h-[15vh] sm:h-[20vh] bg-black bg-opacity-30">
+					<Container>
+						<div className="absolute top-3 left-5">
+							<Image src={LogoImage} alt="Logo" />
+						</div>
 
-					<div className="mt-14">{isDesktop && <Navbar direction="flex-row" textColor="text-black" />}</div>
+						<div className="mt-14">{isDesktop && <Navbar direction="flex-row" />}</div>
 
-					<div>{isDesktop ? <SearchButton /> : <MenuButton />}</div>
-				</Container>
+						<div>{isDesktop ? <SearchButton /> : <MenuButton />}</div>
+					</Container>
+				</div>
 			</header>
 		</>
 	);

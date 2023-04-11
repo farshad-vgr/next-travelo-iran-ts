@@ -2,14 +2,13 @@ import Link from "next/link";
 
 interface Props {
 	direction: string;
-	textColor: string;
 }
 
-export default function Navbar({ direction, textColor }: Props) {
+export default function Navbar({ direction }: Props) {
 	return (
 		<>
 			<nav>
-				<ul id="menu" className={`flex ${direction} gap-10 md:gap-16 text-xl ${textColor}`}>
+				<ul id="menu" className={`flex ${direction} gap-5 sm:gap-10 md:gap-16 text-xl text-white`}>
 					<li className="hover:text-blue-400 hover:underline">
 						<Link href="/">
 							<span className="flex gap-1">
