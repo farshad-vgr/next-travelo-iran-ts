@@ -1,10 +1,15 @@
 import Link from "next/link";
 
-export default function Navbar() {
+interface Props {
+	direction: string;
+	textColor: string;
+}
+
+export default function Navbar({ direction, textColor }: Props) {
 	return (
 		<>
 			<nav>
-				<ul id="menu" className="flex gap-10 md:gap-16 text-xl">
+				<ul id="menu" className={`flex ${direction} gap-10 md:gap-16 text-xl ${textColor}`}>
 					<li className="hover:text-blue-400 hover:underline">
 						<Link href="/">
 							<span className="flex gap-1">
@@ -68,7 +73,7 @@ export default function Navbar() {
 							</span>
 						</Link>
 					</li>
-					
+
 					<li className="hover:text-blue-400 hover:underline">
 						<Link href="/contact">
 							<span className="flex gap-1">

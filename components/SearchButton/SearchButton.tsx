@@ -8,7 +8,7 @@ export default function SearchButton() {
 		<>
 			<div
 				onClick={() => setElementWidth((prevValue) => (prevValue === "w-10" ? "w-80" : "w-10"))}
-				className={`absolute top-3 right-5 ${elementWidth} h-10 mt-1 px-2 rounded-full text-base bg-red-500 text-white hover:bg-red-600 hover:cursor-pointer transition-all duration-700`}>
+				className={`absolute top-2 right-5 ${elementWidth} h-10 mt-1 px-2 rounded-full text-base bg-red-500 text-white hover:bg-red-600 hover:cursor-pointer transition-all duration-700`}>
 				{elementWidth === "w-80" ? (
 					<input
 						onClick={(e) => e.stopPropagation()}
