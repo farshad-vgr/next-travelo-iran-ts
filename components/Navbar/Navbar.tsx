@@ -9,7 +9,7 @@ export default function Navbar({ direction }: Props) {
 		<>
 			<nav>
 				<ul id="menu" className={`flex ${direction} gap-5 sm:gap-10 md:gap-16 text-xl text-white`}>
-					<li className="hover:text-blue-400 hover:underline">
+					<li className="hover:text-blue-200 hover:underline">
 						<Link href="/">
 							<span className="flex gap-1">
 								<svg
@@ -30,7 +30,7 @@ export default function Navbar({ direction }: Props) {
 						</Link>
 					</li>
 
-					<li className="hover:text-blue-400 hover:underline">
+					<li className="hover:text-blue-200 hover:underline">
 						<Link href="/locations">
 							<span className="flex gap-1">
 								<svg
@@ -52,7 +52,7 @@ export default function Navbar({ direction }: Props) {
 						</Link>
 					</li>
 
-					<li className="hover:text-blue-400 hover:underline">
+					<li className="hover:text-blue-200 hover:underline">
 						<Link href="/about">
 							<span className="flex gap-1">
 								<svg
@@ -73,7 +73,7 @@ export default function Navbar({ direction }: Props) {
 						</Link>
 					</li>
 
-					<li className="hover:text-blue-400 hover:underline">
+					<li className="hover:text-blue-200 hover:underline">
 						<Link href="/contact">
 							<span className="flex gap-1">
 								<svg
