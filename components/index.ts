@@ -10,6 +10,7 @@ export { default as Container } from "./Container/Container";
 export { default as Layout } from "./Layout/Layout";
 export { default as Header } from "./Header/Header";
 export { default as Navbar } from "./Navbar/Navbar";
+export { default as NavbarItem } from "./NavbarItem/NavbarItem";
 export { default as SearchButton } from "./SearchButton/SearchButton";
 export { default as MenuButton } from "./MenuButton/MenuButton";
 export { default as CloseButton } from "./CloseButton/CloseButton";

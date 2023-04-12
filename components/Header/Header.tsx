@@ -6,8 +6,8 @@ import LogoImage from "../../public/assets/images/logo.png";
 export default function Header() {
 	return (
 		<>
-			<header className={`w-full h-[15vh] sm:h-[20vh] bg-headerBackground bg-cover bg-[center_right_35%] bg-no-repeat bg-opacity-20`}>
-				<div className="w-full h-[15vh] sm:h-[20vh] bg-black bg-opacity-30">
+			<header className={`w-full h-[4rem] sm:h-[8rem] bg-headerBackground bg-cover bg-center bg-no-repeat bg-opacity-20`}>
+				<div className="w-full h-[4rem] sm:h-[8rem] bg-black bg-opacity-30">
 					<Container>
 						<div className="absolute top-3 left-5">
 							<Image src={LogoImage} alt="Logo" />
