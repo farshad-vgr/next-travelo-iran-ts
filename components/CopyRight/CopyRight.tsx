@@ -2,7 +2,7 @@ export default function CopyRight() {
 	return (
 		<>
 			<div className="flex justify-center items-center absolute bottom-0 left-1/2 -translate-x-1/2 w-full bg-dark text-white rounded py-2 cursor-default">
-				<span className="inline-block w-10 h-10 mr-2">
+				<span className="inline-block w-8 h-8 sm:w-10 sm:h-10 mr-1 xs:mr-2">
 					<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 602 602">
 						<g>
 							<path
@@ -43,7 +43,7 @@ export default function CopyRight() {
 					</a>
 				</i>{" "}
 				© {new Date().getFullYear()}
-				<span className="inline-block w-10 h-10 ml-2">
+				<span className="inline-block w-8 h-8 sm:w-10 sm:h-10 ml-3 sm:ml-2">
 					<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 602 602">
 						<g>
 							<path
