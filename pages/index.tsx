@@ -1,6 +1,11 @@
 import Head from 'next/head';
+import dynamic from "next/dynamic";
 
-import { HomeMain, Layout } from "../components";
+import { Layout } from "../components";
+
+const DynamicHomeMain = dynamic(() => import("../components").then((module) => module.HomeMain), {
+	loading: () => <p>Home is Loading...</p>,
+});
 
 export default function Home() {
   return (
@@ -10,7 +15,7 @@ export default function Home() {
 			</Head>
 
 			<Layout>
-				<HomeMain textContent="This is home page and default page" />
+				<DynamicHomeMain textContent="This is home page and default page" />
 			</Layout>
 		</>
 	);
