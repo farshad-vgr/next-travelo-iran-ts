@@ -1,4 +1,4 @@
-import type { AppProps } from "next/app";
+import type { AppProps, NextWebVitalsMetric } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import { Roboto } from "next/font/google";
@@ -9,6 +9,11 @@ const roboto = Roboto({
 	weight: "400",
 	subsets: [],
 });
+
+// Analyze and measure the performance of pages
+// export function reportWebVitals(metric: NextWebVitalsMetric) {
+// 	console.table(metric);
+// }
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
