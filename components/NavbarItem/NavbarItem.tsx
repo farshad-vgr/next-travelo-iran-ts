@@ -1,17 +1,16 @@
 import Link from "next/link";
 
 interface Props {
-	textColorHover: string;
 	href: string;
 	svgPathD1: string;
 	svgPathD2: string;
 	textContent: string;
 }
 
-export default function NavbarItem({ textColorHover, href, svgPathD1, svgPathD2, textContent }: Props) {
+export default function NavbarItem({ href, svgPathD1, svgPathD2, textContent }: Props) {
 	return (
 		<>
-			<li className={`hover:${textColorHover} hover:underline`}>
+			<li className="hover:text-blue-200 hover:underline">
 				<Link href={href}>
 					<span className="flex gap-1">
 						<svg
