@@ -14,9 +14,7 @@ export default function Locations() {
 				<title>Locations</title>
 			</Head>
 
-			<Layout>
-				<DynamicLocationsMain textContent="this is the Locations page" />
-			</Layout>
+			<DynamicLocationsMain textContent="this is the Locations page" />
 		</>
 	);
 }

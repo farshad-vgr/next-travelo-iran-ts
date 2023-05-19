@@ -9,9 +9,7 @@ export default function About() {
 				<title>About</title>
 			</Head>
 
-			<Layout>
-				<AboutMain textContent="The About page is here!" />
-			</Layout>
+			<AboutMain textContent="The About page is here!" />
 		</>
 	);
 }

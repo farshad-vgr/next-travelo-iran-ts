@@ -9,9 +9,7 @@ export default function Contact() {
 				<title>Contact</title>
 			</Head>
 
-			<Layout>
-				<ContactMain textContent="this is the Contact page" />
-			</Layout>
+			<ContactMain textContent="this is the Contact page" />
 		</>
 	);
 }

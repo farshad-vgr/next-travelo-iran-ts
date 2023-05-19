@@ -15,9 +15,7 @@ export default function Home() {
 				<title>Home</title>
 			</Head>
 
-			<Layout>
-				<DynamicHomeMain textContent="This is home page and default page" />
-			</Layout>
+			<DynamicHomeMain textContent="This is home page and default page" />
 		</>
 	);
 }
