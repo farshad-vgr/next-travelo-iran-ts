@@ -1,7 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-import { Layout } from "../components";
 // import { loadCities } from "./lib/load-cities";
 
 const DynamicHomeMain = dynamic(() => import("../components").then((module) => module.HomeMain), {

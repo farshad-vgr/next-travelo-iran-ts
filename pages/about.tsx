@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { AboutMain, Layout } from "../components";
+import { AboutMain } from "../components";
 
 export default function About() {
 	return (

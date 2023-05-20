@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { ContactMain, Layout } from "../components";
+import { ContactMain } from "../components";
 
 export default function Contact() {
 	return (

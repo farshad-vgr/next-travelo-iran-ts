@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import { Roboto } from "next/font/google";
-import { Layout } from "@/components";
+import { Layout } from "../components";
 
 import "@/styles/globals.css";
 
