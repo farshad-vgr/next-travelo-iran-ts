@@ -1,13 +1,24 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-// import { loadCities } from "./lib/load-cities";
+import { loadCities } from "./lib/load-cities";
 
 const DynamicHomeMain = dynamic(() => import("../components").then((module) => module.HomeMain), {
 	loading: () => <p>HomePage is Loading...</p>,
 });
 
-export default function Home() {
+interface Props {
+	cities: {
+		id: number;
+		name: string;
+		province: string;
+		code: string;
+	}[];
+}
+
+export default function Home({ cities }: Props) {
+	console.table(cities);
+
 	return (
 		<>
 			<Head>
@@ -17,6 +28,17 @@ export default function Home() {
 			<DynamicHomeMain textContent="This is home page and default page" />
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	// Fetching data from internal API route
+	const cities = await loadCities("iran");
+
+	return {
+		props: {
+			cities,
+		},
+	};
 }
 
 // export async function getStaticProps() {
