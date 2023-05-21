@@ -1,9 +1,4 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
-
-const DynamicLocationsMain = dynamic(() => import("../components").then((module) => module.LocationsMain), {
-	loading: () => <p>Locations are Loading...</p>,
-});
 
 export default function Locations() {
 	return (
@@ -12,7 +7,7 @@ export default function Locations() {
 				<title>Locations</title>
 			</Head>
 
-			<DynamicLocationsMain textContent="this is the Locations page" />
+			<div style={{ minHeight: "500px" }}>This is for test LOCATIONS page</div>
 		</>
 	);
 }

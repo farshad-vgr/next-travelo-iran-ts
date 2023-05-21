@@ -19,7 +19,7 @@ export default function NavbarItem({ href, svgPathD1, svgPathD2, textContent }: 
 							viewBox="0 0 24 24"
 							strokeWidth={2}
 							stroke="currentColor"
-							className="w-5 h-5 self-center mb-1">
+							className="self-center w-5 h-5">
 							<path strokeLinecap="round" strokeLinejoin="round" d={svgPathD1} />
 							<path strokeLinecap="round" strokeLinejoin="round" d={svgPathD2} />
 						</svg>

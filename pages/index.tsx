@@ -1,23 +1,17 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
 
 import { loadCities } from "./lib/load-cities";
-
-const DynamicHomeMain = dynamic(() => import("../components").then((module) => module.HomeMain), {
-	loading: () => <p>HomePage is Loading...</p>,
-});
 
 interface Props {
 	cities: {
 		id: number;
 		name: string;
 		province: string;
-		code: string;
 	}[];
 }
 
 export default function Home({ cities }: Props) {
-	console.table(cities);
+	// console.table(cities);
 
 	return (
 		<>
@@ -25,7 +19,7 @@ export default function Home({ cities }: Props) {
 				<title>Home</title>
 			</Head>
 
-			<DynamicHomeMain textContent="This is home page and default page" />
+			<div style={{ minHeight: "500px" }}>This is for test HOME page</div>
 		</>
 	);
 }
