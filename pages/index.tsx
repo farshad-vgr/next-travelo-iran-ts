@@ -1,17 +1,17 @@
 import Head from "next/head";
 
-import loadCities from "./lib/load-cities";
+// import loadCities from "./lib/load-cities";
 
-interface Props {
-	cities: {
-		id: number;
-		name: string;
-		province: string;
-	}[];
-}
+// interface Props {
+// 	cities: {
+// 		id: number;
+// 		name: string;
+// 		province: string;
+// 	}[];
+// }
 
-export default function Home({ cities }: Props) {
-	console.log(cities);
+export default function Home() {
+	// console.log(cities);
 
 	return (
 		<>
@@ -24,13 +24,13 @@ export default function Home({ cities }: Props) {
 	);
 }
 
-export async function getStaticProps() {
-	// Fetching data from internal API route
-	const cities = await loadCities("iran");
+// export async function getStaticProps() {
+// 	// Fetching data from internal API route
+// 	const cities = await loadCities("iran");
 
-	return {
-		props: {
-			cities,
-		},
-	};
-}
+// 	return {
+// 		props: {
+// 			cities,
+// 		},
+// 	};
+// }
