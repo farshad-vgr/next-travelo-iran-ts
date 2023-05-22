@@ -19,7 +19,7 @@ export default function Home() {
 				<title>Home</title>
 			</Head>
 
-			<div style={{ minHeight: "500px" }}>This is for test HOME page</div>
+			<div style={{ minHeight: "500px" }}>This is for test HOME page(changed content)</div>
 		</>
 	);
 }
