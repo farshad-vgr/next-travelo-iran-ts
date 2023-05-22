@@ -24,7 +24,8 @@ export default function Home({ cities }: Props) {
 
 export async function getStaticProps() {
 	// Fetching data from internal "API route"
-	const response = await fetch(`http://localhost:3000/api/cities?country=iran`);
+	const response = await fetch(`https://fv-travelo-iran.vercel.app/api/cities?country=iran`);
+	// const response = await fetch(`http://localhost:3000/api/cities?country=iran`);
 	const cities = await response.json();
 
 	return {
