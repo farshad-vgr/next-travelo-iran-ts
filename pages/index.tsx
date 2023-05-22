@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function Home({ cities }: Props) {
-	// console.table(cities);
+	console.log(cities);
 
 	return (
 		<>
@@ -34,30 +34,3 @@ export async function getStaticProps() {
 		},
 	};
 }
-
-// export async function getStaticProps() {
-// 	// Fetching data from external API
-// 	try {
-// 		var users = await (await fetch("https://jsonplaceholder.typicode.com/users")).json();
-// 	} catch (error) {
-// 		console.log("Failed to load users: ", error);
-// 	}
-
-// 	// Fetching data from external API
-// 	try {
-// 		var comments = await (await fetch("https://jsonplaceholder.typicode.com/comments")).json();
-// 	} catch (error) {
-// 		console.log("Failed to load comments: ", error);
-// 	}
-
-// 	// Fetching data from internal API route
-// 	const cities = await loadCities();
-
-// 	return {
-// 		props: {
-// 			users,
-// 			comments,
-// 			cities,
-// 		},
-// 	};
-// }
