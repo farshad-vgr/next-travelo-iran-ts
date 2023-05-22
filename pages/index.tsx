@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { loadCities } from "./lib/load-cities";
+import loadCities from "./lib/load-cities";
 
 interface Props {
 	cities: {
