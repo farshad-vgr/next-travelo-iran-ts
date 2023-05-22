@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 interface Props {
 	cities: {
@@ -8,8 +9,13 @@ interface Props {
 	}[];
 }
 
+let basePath: string;
+
 export default function Home({ cities }: Props) {
 	console.log(cities);
+	const router = useRouter();
+	// console.log(router.basePath === "");
+	basePath = router.basePath;
 
 	return (
 		<>
@@ -24,7 +30,10 @@ export default function Home({ cities }: Props) {
 
 export async function getStaticProps() {
 	// Fetching data from internal "API route"
-	const response = await fetch(`https://fv-travelo-iran.vercel.app/api/cities?country=iran`);
+	const response =
+		basePath === "https://fv-travelo-iran.vercel.app/"
+			? await fetch(`https://fv-travelo-iran.vercel.app/api/cities?country=iran`)
+			: await fetch(`http://localhost:3000/api/cities?country=iran`);
 	// const response = await fetch(`http://localhost:3000/api/cities?country=iran`);
 	const cities = await response.json();
 
