@@ -23,10 +23,9 @@ export default function Home({ cities }: Props) {
 }
 
 export async function getStaticProps() {
-	// Fetching data from internal API route
+	// Fetching data from internal "API route"
 	const response = await fetch(`http://localhost:3000/api/cities?country=iran`);
-	const data = await response.json();
-	const cities = data;
+	const cities = await response.json();
 
 	return {
 		props: {
