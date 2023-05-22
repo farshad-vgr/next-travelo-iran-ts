@@ -9,13 +9,13 @@ import { useRouter } from "next/router";
 // 	}[];
 // }
 
-let basePath: string;
+let basePath: any;
 
 export default function Home() {
 	// console.log(cities);
 	const router = useRouter();
-	basePath = router.basePath;
-	console.log(router.basePath, basePath);
+	basePath = router;
+	console.log(basePath);
 
 	return (
 		<>
